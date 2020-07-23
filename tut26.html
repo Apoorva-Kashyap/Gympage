@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+</head>
+<style>
+    /*CSS reset*/
+    body {
+        font-family: 'Ranchers';
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(mr-lee-f4RBYsY2hxA-unsplash.jpg);
+
+    }
+
+    .left {
+        display: inline-block;
+       
+        position: absolute;
+        left: 60px;
+        top: 20px;
+
+    }
+
+    .left img {
+        width: 86px;
+        filter: invert(100%);
+        /* to convert color */
+    }
+
+        .left div {
+            line-height: 19px;
+            font-size: 96%;
+            text-align: center;
+        }
+    
+
+    .mid {
+        display: block;
+       /* border: 2px solid green; */
+        margin: 20px auto;
+        width: 44%;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 30px;
+        display: inline-block;
+         /*border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        
+        font-family: 'Ranchers';
+        border: 2px solid gray;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        color: gray;
+    }
+
+    .container {
+        border: 5px solid white;
+        top: 20%;
+        margin: 106px 80px;
+        padding: 17px;
+        width: 38%;
+        border-radius: 28px
+    }
+
+    .form-group input {
+        font-family: 'Rancher';
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 3px;
+        border: 2px solid black;
+        margin: 8px auto;
+        border-radius: 13px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+
+    }
+</style>
+
+
+<body>
+    <header class="header">
+        <!--left for logo., mid for nav bar., right for buttons-->
+        <div class="left"><img src="harrrylogo.png">
+            <div>APOORVA &nbsp FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now.</button>
+            <button class="btn">E-mail Us.</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            Join the best gym of Patna now!!!
+        </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter you name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Height">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Weight">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Phone No.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
